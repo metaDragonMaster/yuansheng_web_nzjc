@@ -1,0 +1,12 @@
+.banner {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.el-row {
+	position: relative;
+	.sticky-col {
+		position: sticky;
+		top: 3rem;
+	}
+}

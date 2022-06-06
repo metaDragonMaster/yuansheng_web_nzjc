@@ -1,0 +1,21 @@
+//限制最大宽度 1320px
+@mixin mixin-limit-max-width {
+	min-width: 1320px;
+	// padding: 0 calc((100% - 1200px) / 2);
+	padding: 0 calc((100% - 1320px) / 2);
+}
+.limit-max-width,
+div[limit-max-width]{
+	@include mixin-limit-max-width;
+}
+
+@mixin mixin-limit-max-width-inset {
+	// min-width: 1200px;
+	// padding: 0 calc((100vw - 1200px) / 2);
+	max-width: 1320px;
+	margin: 0 auto;
+}
+.limit-max-width-inset,
+div[limit-max-width-inset]{
+	@include mixin-limit-max-width-inset;
+}
